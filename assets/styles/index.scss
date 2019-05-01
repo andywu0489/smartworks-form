@@ -15,7 +15,7 @@ button {
   border: 2px solid rgb(224, 224, 224);
   width: 100%;
   height: 40px;
-  padding-right: 50px;
+  //padding-right: 50px;
   font-size: 23px;
   // outline: none;
   // border-color: none;
@@ -56,15 +56,32 @@ button {
 }
 
 #save {
-  float: right;
+  // float: right;
   margin-right: 3px;
 }
 
 #next {
   border: 2px solid rgb(0, 100, 153);
-  float: right;
+  // float: right;
   background-color: rgb(0, 102, 204);
   color: rgb(250, 250, 250);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+}
+
+.column {
+  display: flex;
+  flex-direction: row;
+}
+
+#container {
+  display: flex;
 }
 
 h4 {
@@ -75,4 +92,32 @@ h4 {
 .error-msg {
   color: red;
   font-weight: 350;
+}
+
+@media only screen and (min-width: 900px) {
+  h1 {font-size: 50px;}
+}
+
+@media only screen and (max-width: 750px) {
+  h1 {font-size: 35px;}
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {font-size: 25px;}
+  h4 {font-size: 15px;}
+  .inputs {font-size: 15px;}
+  #save {float: none;}
+  #next {float: none;}
+  .row {
+    flex-direction: column;
+  }
+  .column {
+    flex-direction: column;
+  }
+  #cancel {
+    width: 100%;
+  }
+  #save {
+    margin: 5px 0;
+  }
 }
