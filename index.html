@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Task 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Do not add `link` tags-->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Do not add `script` tags-->
+  <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+</head>
+
+<body>
+  <h1>Enter Open Position Information</h1>
+  <form name='form'>
+    <h4>Position Title</h4>
+    <input id='title' name='title' class='inputs' type='text' placeholder='Test Position'>
+    <h4 class='error-msg' id='position-title-msg'></h4>
+    <h4>Position Location</h4>
+    <input id='location' name='location' class='inputs' type='text' placeholder='Test Location'>
+    <h4 class='error-msg' id='position-location-msg'></h4>
+    <h4>Department</h4>
+    <input id='department' name='department' class='inputs' type='text' placeholder='Test Departments'>
+    <h4 class='error-msg' id='department-msg'></h4>
+    <h4>Comments</h4>
+    <textarea name='comment' id='comment' class='inputs' placeholder='Test Comments'></textarea>
+    <h4 class='error-msg' id='comment-msg'></h4>
+    <div class='wrapper'>
+      <div class='row'>
+        <div class='colunm'>
+          <button id='cancel'>Cancel</button>
+        </div>
+        <div class='column'>
+          <button type='submit' id='save'>Save & Close</button>
+          <button type='submit' id='next'>Next ></button>
+        </div>
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>
